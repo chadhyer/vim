@@ -36,11 +36,33 @@ set autoindent
 set noswapfile
 set hlsearch
 
+""" KEY BIND CHANGES """
 " no arrow keys - for pros
 "nnoremap <Left> <NOP>
 "nnoremap <Right> <NOP>
 "nnoremap <Up> <NOP>
 "nnoremap <Down> <NOP>
+
+" split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" shift 10
+nnoremap <S-J> 10j
+nnoremap <S-K> 10k
+nnoremap <S-L> 20l
+nnoremap <S-H> 20h
+
+" jump begin/end
+nnoremap <C-J> <C-End>
+nnoremap <C-K> <C-Home>
+nnoremap <C-L> <End>
+nnoremap <C-H> <Home>
+
+" toggle numbers
+nnoremap <C-n> :set nonumber!<CR>
 
 " remove highlights for searching
 nnoremap <CR> :nohlsearch<CR>
@@ -52,6 +74,7 @@ noremap <Leader>c :NERDTreeClose<CR>
 noremap <Leader>f :NERDTreeFind<CR>
 let NERDTreeChDirMode = 2
 let NERDTreeShowHidden = 1
+
 
 " Folding
 "set foldmethod=syntax
