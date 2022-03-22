@@ -107,3 +107,4 @@ set backspace=indent,eol,start
 
 " COLOR
 colorscheme simple
+#its time?
