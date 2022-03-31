@@ -96,7 +96,7 @@ set cursorline
 exe ':hi CursorLine guibg=' . line2 . ' gui=none'
 exe ':hi LineNr guifg=' . line1 . ' guibg=' . line2
 exe ':hi CursorLineNr guifg=' . cCursor . ' guibg=' . line2
-exe ':hi CursorLine guibg=' . line2 . ' cterm=bold
+exe ':hi CursorLine guibg=' . line2 . ' cterm=bold'
 
 " Fold
 exe ':hi Folded guibg=' . line2 . ' guifg=' . cCyan
